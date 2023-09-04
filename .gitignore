@@ -1,2 +1,2 @@
 .vscode
-/dist/**/*.js
+/example/dist/**/*.js

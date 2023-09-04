@@ -4,6 +4,6 @@
     "test": "deno run dist/app.bundle.js"
   },
   "imports": {
-    "$src/": "./src/"
+    "$src/": "./example/src/"
   }
 }
