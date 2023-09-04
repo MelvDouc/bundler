@@ -1,0 +1,11 @@
+{
+  "deno.enable": true,
+  "deno.lint": false,
+  "deno.unstable": true,
+  "cSpell.words": [
+    "deno",
+    "lightgreen",
+    "outdir",
+    "outfile"
+  ]
+}
