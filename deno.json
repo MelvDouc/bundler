@@ -1,7 +1,7 @@
 {
   "tasks": {
     "bundle": "deno run --allow-read --allow-write --allow-env --allow-run bundle.ts",
-    "test": "deno run dist/app.bundle.js"
+    "test": "deno run example/dist/app.bundle.js"
   },
   "imports": {
     "$src/": "./example/src/"
