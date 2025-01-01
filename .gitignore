@@ -1,2 +1,5 @@
 .vscode
-/example/dist/**/*.js
+node_modules
+dist
+
+example/dist/**/*.js

@@ -1,9 +1,21 @@
 {
-  "tasks": {
-    "bundle": "deno run --allow-read --allow-write --allow-env --allow-run bundle.ts",
-    "test": "deno run example/dist/app.bundle.js"
-  },
+  "name": "@melvdouc/esbuild-path-aliases-plugin",
+  "version": "0.1.0",
+  "license": "MIT",
   "imports": {
-    "$src/": "./example/src/"
+    "$/": "./",
+    "@std/path": "jsr:@std/path@^1.0.8",
+    "esbuild": "npm:esbuild@^0.24.2"
+  },
+  "exports": "./src/mod.ts",
+  "publish": {
+    "include": [
+      "src",
+      "deno.json",
+      "README.md"
+    ]
+  },
+  "tasks": {
+    "test": "deno task --cwd ./example test"
   }
 }

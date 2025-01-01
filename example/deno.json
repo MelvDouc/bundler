@@ -1,0 +1,12 @@
+{
+  "tasks": {
+    "build": "deno run --allow-read --allow-write --allow-env --allow-run build.ts",
+    "start": "deno run dist/app.bundle.js",
+    "test": "deno task build && deno task start"
+  },
+  "imports": {
+    "@melvdouc/esbuild-path-aliases-plugin": "jsr:@melvdouc/esbuild-path-aliases-plugin@^0.1.0",
+    "esbuild": "npm:esbuild@^0.24.2",
+    "$test-app/": "./src/"
+  }
+}

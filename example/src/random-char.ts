@@ -1,4 +1,4 @@
-import randomInt from "$src/random-int.ts";
+import randomInt from "$test-app/random-int.ts";
 
 export function randomLowerCase() {
   return String.fromCharCode(randomInt(97, 122));

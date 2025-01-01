@@ -1,6 +1,6 @@
-import randomInt from "$src/random-int.ts";
-import { randomLowerCase, randomSymbol, randomUpperCase } from "$src/random-char.ts";
-import shuffle from "$src/shuffle.ts";
+import randomInt from "$test-app/random-int.ts";
+import { randomLowerCase, randomSymbol, randomUpperCase } from "$test-app/random-char.ts";
+import shuffle from "$test-app/array-utils/shuffle.ts";
 
 function getRandomPassword(length: number): string {
   const password: string[] = [];

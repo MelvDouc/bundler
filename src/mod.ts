@@ -1,0 +1,1 @@
+export { default as resolvePathAliasesPlugin } from "$/src/plugin.ts";
