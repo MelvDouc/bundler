@@ -4,6 +4,10 @@ import type { ImportMap, PathAliasesPluginParams } from "$/src/types.ts";
 
 const PLUGIN_NAME = "resolve-path-aliases";
 
+/**
+ * @param params An object containing the import map and root directory (optional).
+ * @returns An ESBuild plugin that resolves path aliases.
+ */
 export default function plugin(params: PathAliasesPluginParams): esbuild.Plugin {
   const baseUrl = params.root ?? Deno.cwd();
   const cache = new Map<string, string>();
@@ -27,6 +31,11 @@ export default function plugin(params: PathAliasesPluginParams): esbuild.Plugin 
   };
 }
 
+/**
+ * @param path An aliased import path.
+ * @param importMap A dictionary of path aliases to resolve.
+ * @returns The non-aliased import path.
+ */
 function replaceAlias(path: string, importMap: ImportMap): string {
   let bestMatch: string = path;
   let bestLength = -Infinity; // Look for the longest alias match.
